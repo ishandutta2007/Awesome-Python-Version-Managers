@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-Python-Version-Managers/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Python-Version-Managers?style=flat-square&logo=github" alt="GitHub Stars"/></a> <a href="https://github.com/ishandutta2007/Awesome-Python-Version-Managers/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Python-Version-Managers?style=flat-square&logo=github" alt="GitHub Forks"/></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License"/></a> <a href="#-how-to-contribute"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-Python-Version-Managers/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Python-Version-Managers?style=flat-square&logo=github" alt="GitHub_Stars"/></a> <a href="https://github.com/ishandutta2007/Awesome-Python-Version-Managers/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Python-Version-Managers?style=flat-square&logo=github" alt="GitHub Forks"/></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License"/></a> <a href="#-how-to-contribute"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 ---
@@ -81,29 +81,29 @@ The following open-source projects provide local interpreter installation, versi
 
 ### 📊 At-a-Glance Comparison Matrix
 
-| Project | GitHub Stars | Implementation Language | Interpreter Installation | Version Pinning File | Primary Specialty |
+| Project | GitHub_Stars | Implementation Language | Interpreter Installation | Version Pinning File | Primary Specialty |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **[uv](#1-uv-)** | [![GitHub stars](https://img.shields.io/github/stars/astral-sh/uv?style=social&color=white)](https://github.com/astral-sh/uv/stargazers) | Rust | Precompiled Binaries | `.python-version`, `pyproject.toml` | All-in-one ultra-fast toolchain |
-| **[pyenv](#2-pyenv-)** | [![GitHub stars](https://img.shields.io/github/stars/pyenv/pyenv?style=social&color=white)](https://github.com/pyenv/pyenv/stargazers) | Shell / C | Source Compilation | `.python-version` | Battle-tested CPython build standard |
-| **[mise](#3-mise-)** | [![GitHub stars](https://img.shields.io/github/stars/jdx/mise?style=social&color=white)](https://github.com/jdx/mise/stargazers) | Rust | Precompiled / Source | `.mise.toml`, `.tool-versions` | Polyglot runtime & environment manager |
-| **[Poetry](#4-poetry-)** | [![GitHub stars](https://img.shields.io/github/stars/python-poetry/poetry?style=social&color=white)](https://github.com/python-poetry/poetry/stargazers) | Python | External / System | `pyproject.toml`, `poetry.lock` | Deterministic dependency & package locking |
-| **[asdf](#5-asdf-)** | [![GitHub stars](https://img.shields.io/github/stars/asdf-vm/asdf?style=social&color=white)](https://github.com/asdf-vm/asdf/stargazers) | Shell / Elixir | Plugin-driven | `.tool-versions` | Classic multi-language runtime switcher |
-| **[Pipenv](#6-pipenv-)** | [![GitHub stars](https://img.shields.io/github/stars/pypa/pipenv?style=social&color=white)](https://github.com/pypa/pipenv/stargazers) | Python | External / pyenv | `Pipfile`, `Pipfile.lock` | Standard PyPA venv & packaging combo |
-| **[Rye](#7-rye-)** | [![GitHub stars](https://img.shields.io/github/stars/astral-sh/rye?style=social&color=white)](https://github.com/astral-sh/rye/stargazers) | Rust | Standalone Binaries | `.python-version`, `pyproject.toml` | Opinionated all-in-one toolchain prototype |
-| **[pipx](#8-pipx-)** | [![GitHub stars](https://img.shields.io/github/stars/pypa/pipx?style=social&color=white)](https://github.com/pypa/pipx/stargazers) | Python | External / System | System isolated | Isolated CLI application runner |
-| **[PDM](#9-pdm-)** | [![GitHub stars](https://img.shields.io/github/stars/pdm-project/pdm?style=social&color=white)](https://github.com/pdm-project/pdm/stargazers) | Python | External / System | `pdm.lock`, `pyproject.toml` | PEP 582 & PEP 621 package manager |
-| **[pixi](#10-pixi-)** | [![GitHub stars](https://img.shields.io/github/stars/prefix-dev/pixi?style=social&color=white)](https://github.com/prefix-dev/pixi/stargazers) | Rust | Conda-forge Binaries | `pixi.toml`, `pixi.lock` | Fast conda-based multi-language solver |
-| **[Conda](#11-conda-)** | [![GitHub stars](https://img.shields.io/github/stars/conda/conda?style=social&color=white)](https://github.com/conda/conda/stargazers) | Python | Precompiled Binaries | `environment.yml` | Scientific computing & C-library isolation |
-| **[pyenv-win](#12-pyenv-win-)** | [![GitHub stars](https://img.shields.io/github/stars/pyenv-win/pyenv-win?style=social&color=white)](https://github.com/pyenv-win/pyenv-win/stargazers) | PowerShell / Batch | Official Windows Installers | `.python-version` | Native Windows port of pyenv |
-| **[Hatch](#13-hatch-)** | [![GitHub stars](https://img.shields.io/github/stars/pypa/hatch?style=social&color=white)](https://github.com/pypa/hatch/stargazers) | Python | Standalone Binaries | `hatch.toml`, `pyproject.toml` | Standards-compliant project manager |
-| **[virtualenv](#14-virtualenv-)** | [![GitHub stars](https://img.shields.io/github/stars/pypa/virtualenv?style=social&color=white)](https://github.com/pypa/virtualenv/stargazers) | Python | External / System | Local Directory | Low-level environment isolation baseline |
-| **[tox](#15-tox-)** | [![GitHub stars](https://img.shields.io/github/stars/tox-dev/tox?style=social&color=white)](https://github.com/tox-dev/tox/stargazers) | Python | External / Multiple | `tox.ini` | Automated matrix testing across Pythons |
-| **[Nox](#16-nox-)** | [![GitHub stars](https://img.shields.io/github/stars/wntrblm/nox?style=social&color=white)](https://github.com/wntrblm/nox/stargazers) | Python | External / Multiple | `noxfile.py` | Python-configured test environment matrix |
-| **[Pyflow](#17-pyflow-)** | [![GitHub stars](https://img.shields.io/github/stars/David-OConnor/pyflow?style=social&color=white)](https://github.com/David-OConnor/pyflow/stargazers) | Rust | Standalone Binaries | `pyproject.toml` | Zero-configuration Python project manager |
+| **[uv](#1-uv-)** | [![GitHub_Stars](https://img.shields.io/github/stars/astral-sh/uv?style=social&color=white)](https://github.com/astral-sh/uv/stargazers) | Rust | Precompiled Binaries | `.python-version`, `pyproject.toml` | All-in-one ultra-fast toolchain |
+| **[pyenv](#2-pyenv-)** | [![GitHub_Stars](https://img.shields.io/github/stars/pyenv/pyenv?style=social&color=white)](https://github.com/pyenv/pyenv/stargazers) | Shell / C | Source Compilation | `.python-version` | Battle-tested CPython build standard |
+| **[mise](#3-mise-)** | [![GitHub_Stars](https://img.shields.io/github/stars/jdx/mise?style=social&color=white)](https://github.com/jdx/mise/stargazers) | Rust | Precompiled / Source | `.mise.toml`, `.tool-versions` | Polyglot runtime & environment manager |
+| **[Poetry](#4-poetry-)** | [![GitHub_Stars](https://img.shields.io/github/stars/python-poetry/poetry?style=social&color=white)](https://github.com/python-poetry/poetry/stargazers) | Python | External / System | `pyproject.toml`, `poetry.lock` | Deterministic dependency & package locking |
+| **[asdf](#5-asdf-)** | [![GitHub_Stars](https://img.shields.io/github/stars/asdf-vm/asdf?style=social&color=white)](https://github.com/asdf-vm/asdf/stargazers) | Shell / Elixir | Plugin-driven | `.tool-versions` | Classic multi-language runtime switcher |
+| **[Pipenv](#6-pipenv-)** | [![GitHub_Stars](https://img.shields.io/github/stars/pypa/pipenv?style=social&color=white)](https://github.com/pypa/pipenv/stargazers) | Python | External / pyenv | `Pipfile`, `Pipfile.lock` | Standard PyPA venv & packaging combo |
+| **[Rye](#7-rye-)** | [![GitHub_Stars](https://img.shields.io/github/stars/astral-sh/rye?style=social&color=white)](https://github.com/astral-sh/rye/stargazers) | Rust | Standalone Binaries | `.python-version`, `pyproject.toml` | Opinionated all-in-one toolchain prototype |
+| **[pipx](#8-pipx-)** | [![GitHub_Stars](https://img.shields.io/github/stars/pypa/pipx?style=social&color=white)](https://github.com/pypa/pipx/stargazers) | Python | External / System | System isolated | Isolated CLI application runner |
+| **[PDM](#9-pdm-)** | [![GitHub_Stars](https://img.shields.io/github/stars/pdm-project/pdm?style=social&color=white)](https://github.com/pdm-project/pdm/stargazers) | Python | External / System | `pdm.lock`, `pyproject.toml` | PEP 582 & PEP 621 package manager |
+| **[pixi](#10-pixi-)** | [![GitHub_Stars](https://img.shields.io/github/stars/prefix-dev/pixi?style=social&color=white)](https://github.com/prefix-dev/pixi/stargazers) | Rust | Conda-forge Binaries | `pixi.toml`, `pixi.lock` | Fast conda-based multi-language solver |
+| **[Conda](#11-conda-)** | [![GitHub_Stars](https://img.shields.io/github/stars/conda/conda?style=social&color=white)](https://github.com/conda/conda/stargazers) | Python | Precompiled Binaries | `environment.yml` | Scientific computing & C-library isolation |
+| **[pyenv-win](#12-pyenv-win-)** | [![GitHub_Stars](https://img.shields.io/github/stars/pyenv-win/pyenv-win?style=social&color=white)](https://github.com/pyenv-win/pyenv-win/stargazers) | PowerShell / Batch | Official Windows Installers | `.python-version` | Native Windows port of pyenv |
+| **[Hatch](#13-hatch-)** | [![GitHub_Stars](https://img.shields.io/github/stars/pypa/hatch?style=social&color=white)](https://github.com/pypa/hatch/stargazers) | Python | Standalone Binaries | `hatch.toml`, `pyproject.toml` | Standards-compliant project manager |
+| **[virtualenv](#14-virtualenv-)** | [![GitHub_Stars](https://img.shields.io/github/stars/pypa/virtualenv?style=social&color=white)](https://github.com/pypa/virtualenv/stargazers) | Python | External / System | Local Directory | Low-level environment isolation baseline |
+| **[tox](#15-tox-)** | [![GitHub_Stars](https://img.shields.io/github/stars/tox-dev/tox?style=social&color=white)](https://github.com/tox-dev/tox/stargazers) | Python | External / Multiple | `tox.ini` | Automated matrix testing across Pythons |
+| **[Nox](#16-nox-)** | [![GitHub_Stars](https://img.shields.io/github/stars/wntrblm/nox?style=social&color=white)](https://github.com/wntrblm/nox/stargazers) | Python | External / Multiple | `noxfile.py` | Python-configured test environment matrix |
+| **[Pyflow](#17-pyflow-)** | [![GitHub_Stars](https://img.shields.io/github/stars/David-OConnor/pyflow?style=social&color=white)](https://github.com/David-OConnor/pyflow/stargazers) | Rust | Standalone Binaries | `pyproject.toml` | Zero-configuration Python project manager |
 
 ---
 
-### 1. [uv](https://github.com/astral-sh/uv) [![GitHub stars](https://img.shields.io/github/stars/astral-sh/uv?style=social&color=white)](https://github.com/astral-sh/uv/stargazers)
+### 1. [uv](https://github.com/astral-sh/uv) [![GitHub_Stars](https://img.shields.io/github/stars/astral-sh/uv?style=social&color=white)](https://github.com/astral-sh/uv/stargazers)
 
 - **License:** MIT / Apache-2.0
 - **Implementation:** Rust (Astral)
@@ -117,7 +117,7 @@ The following open-source projects provide local interpreter installation, versi
 
 ---
 
-### 2. [pyenv](https://github.com/pyenv/pyenv) [![GitHub stars](https://img.shields.io/github/stars/pyenv/pyenv?style=social&color=white)](https://github.com/pyenv/pyenv/stargazers)
+### 2. [pyenv](https://github.com/pyenv/pyenv) [![GitHub_Stars](https://img.shields.io/github/stars/pyenv/pyenv?style=social&color=white)](https://github.com/pyenv/pyenv/stargazers)
 
 - **License:** MIT
 - **Implementation:** Pure Shell & C shims
@@ -131,7 +131,7 @@ The following open-source projects provide local interpreter installation, versi
 
 ---
 
-### 3. [mise](https://github.com/jdx/mise) [![GitHub stars](https://img.shields.io/github/stars/jdx/mise?style=social&color=white)](https://github.com/jdx/mise/stargazers)
+### 3. [mise](https://github.com/jdx/mise) [![GitHub_Stars](https://img.shields.io/github/stars/jdx/mise?style=social&color=white)](https://github.com/jdx/mise/stargazers)
 
 - **License:** MIT
 - **Implementation:** Rust
@@ -146,7 +146,7 @@ The following open-source projects provide local interpreter installation, versi
 
 ---
 
-### 4. [Poetry](https://github.com/python-poetry/poetry) [![GitHub stars](https://img.shields.io/github/stars/python-poetry/poetry?style=social&color=white)](https://github.com/python-poetry/poetry/stargazers)
+### 4. [Poetry](https://github.com/python-poetry/poetry) [![GitHub_Stars](https://img.shields.io/github/stars/python-poetry/poetry?style=social&color=white)](https://github.com/python-poetry/poetry/stargazers)
 
 - **License:** MIT
 - **Implementation:** Python
@@ -160,7 +160,7 @@ The following open-source projects provide local interpreter installation, versi
 
 ---
 
-### 5. [asdf](https://github.com/asdf-vm/asdf) [![GitHub stars](https://img.shields.io/github/stars/asdf-vm/asdf?style=social&color=white)](https://github.com/asdf-vm/asdf/stargazers)
+### 5. [asdf](https://github.com/asdf-vm/asdf) [![GitHub_Stars](https://img.shields.io/github/stars/asdf-vm/asdf?style=social&color=white)](https://github.com/asdf-vm/asdf/stargazers)
 
 - **License:** MIT
 - **Implementation:** Shell / Elixir
@@ -173,7 +173,7 @@ The following open-source projects provide local interpreter installation, versi
 
 ---
 
-### 6. [Pipenv](https://github.com/pypa/pipenv) [![GitHub stars](https://img.shields.io/github/stars/pypa/pipenv?style=social&color=white)](https://github.com/pypa/pipenv/stargazers)
+### 6. [Pipenv](https://github.com/pypa/pipenv) [![GitHub_Stars](https://img.shields.io/github/stars/pypa/pipenv?style=social&color=white)](https://github.com/pypa/pipenv/stargazers)
 
 - **License:** MIT
 - **Implementation:** Python (PyPA)
@@ -186,7 +186,7 @@ The following open-source projects provide local interpreter installation, versi
 
 ---
 
-### 7. [Rye](https://github.com/astral-sh/rye) [![GitHub stars](https://img.shields.io/github/stars/astral-sh/rye?style=social&color=white)](https://github.com/astral-sh/rye/stargazers)
+### 7. [Rye](https://github.com/astral-sh/rye) [![GitHub_Stars](https://img.shields.io/github/stars/astral-sh/rye?style=social&color=white)](https://github.com/astral-sh/rye/stargazers)
 
 - **License:** MIT / Apache-2.0
 - **Implementation:** Rust (Created by Armin Ronacher, maintained by Astral)
@@ -199,7 +199,7 @@ The following open-source projects provide local interpreter installation, versi
 
 ---
 
-### 8. [pipx](https://github.com/pypa/pipx) [![GitHub stars](https://img.shields.io/github/stars/pypa/pipx?style=social&color=white)](https://github.com/pypa/pipx/stargazers)
+### 8. [pipx](https://github.com/pypa/pipx) [![GitHub_Stars](https://img.shields.io/github/stars/pypa/pipx?style=social&color=white)](https://github.com/pypa/pipx/stargazers)
 
 - **License:** MIT
 - **Implementation:** Python (PyPA)
@@ -212,7 +212,7 @@ The following open-source projects provide local interpreter installation, versi
 
 ---
 
-### 9. [PDM](https://github.com/pdm-project/pdm) [![GitHub stars](https://img.shields.io/github/stars/pdm-project/pdm?style=social&color=white)](https://github.com/pdm-project/pdm/stargazers)
+### 9. [PDM](https://github.com/pdm-project/pdm) [![GitHub_Stars](https://img.shields.io/github/stars/pdm-project/pdm?style=social&color=white)](https://github.com/pdm-project/pdm/stargazers)
 
 - **License:** MIT
 - **Implementation:** Python
@@ -225,7 +225,7 @@ The following open-source projects provide local interpreter installation, versi
 
 ---
 
-### 10. [pixi](https://github.com/prefix-dev/pixi) [![GitHub stars](https://img.shields.io/github/stars/prefix-dev/pixi?style=social&color=white)](https://github.com/prefix-dev/pixi/stargazers)
+### 10. [pixi](https://github.com/prefix-dev/pixi) [![GitHub_Stars](https://img.shields.io/github/stars/prefix-dev/pixi?style=social&color=white)](https://github.com/prefix-dev/pixi/stargazers)
 
 - **License:** BSD-3-Clause
 - **Implementation:** Rust (prefix-dev)
@@ -238,7 +238,7 @@ The following open-source projects provide local interpreter installation, versi
 
 ---
 
-### 11. [Conda](https://github.com/conda/conda) [![GitHub stars](https://img.shields.io/github/stars/conda/conda?style=social&color=white)](https://github.com/conda/conda/stargazers)
+### 11. [Conda](https://github.com/conda/conda) [![GitHub_Stars](https://img.shields.io/github/stars/conda/conda?style=social&color=white)](https://github.com/conda/conda/stargazers)
 
 - **License:** BSD-3-Clause
 - **Implementation:** Python
@@ -251,7 +251,7 @@ The following open-source projects provide local interpreter installation, versi
 
 ---
 
-### 12. [pyenv-win](https://github.com/pyenv-win/pyenv-win) [![GitHub stars](https://img.shields.io/github/stars/pyenv-win/pyenv-win?style=social&color=white)](https://github.com/pyenv-win/pyenv-win/stargazers)
+### 12. [pyenv-win](https://github.com/pyenv-win/pyenv-win) [![GitHub_Stars](https://img.shields.io/github/stars/pyenv-win/pyenv-win?style=social&color=white)](https://github.com/pyenv-win/pyenv-win/stargazers)
 
 - **License:** MIT
 - **Implementation:** PowerShell & Windows Batch
@@ -264,7 +264,7 @@ The following open-source projects provide local interpreter installation, versi
 
 ---
 
-### 13. [Hatch](https://github.com/pypa/hatch) [![GitHub stars](https://img.shields.io/github/stars/pypa/hatch?style=social&color=white)](https://github.com/pypa/hatch/stargazers)
+### 13. [Hatch](https://github.com/pypa/hatch) [![GitHub_Stars](https://img.shields.io/github/stars/pypa/hatch?style=social&color=white)](https://github.com/pypa/hatch/stargazers)
 
 - **License:** MIT
 - **Implementation:** Python (PyPA)
@@ -277,7 +277,7 @@ The following open-source projects provide local interpreter installation, versi
 
 ---
 
-### 14. [virtualenv](https://github.com/pypa/virtualenv) [![GitHub stars](https://img.shields.io/github/stars/pypa/virtualenv?style=social&color=white)](https://github.com/pypa/virtualenv/stargazers)
+### 14. [virtualenv](https://github.com/pypa/virtualenv) [![GitHub_Stars](https://img.shields.io/github/stars/pypa/virtualenv?style=social&color=white)](https://github.com/pypa/virtualenv/stargazers)
 
 - **License:** MIT
 - **Implementation:** Python (PyPA)
@@ -290,7 +290,7 @@ The following open-source projects provide local interpreter installation, versi
 
 ---
 
-### 15. [tox](https://github.com/tox-dev/tox) [![GitHub stars](https://img.shields.io/github/stars/tox-dev/tox?style=social&color=white)](https://github.com/tox-dev/tox/stargazers)
+### 15. [tox](https://github.com/tox-dev/tox) [![GitHub_Stars](https://img.shields.io/github/stars/tox-dev/tox?style=social&color=white)](https://github.com/tox-dev/tox/stargazers)
 
 - **License:** MIT
 - **Implementation:** Python
@@ -303,7 +303,7 @@ The following open-source projects provide local interpreter installation, versi
 
 ---
 
-### 16. [Nox](https://github.com/wntrblm/nox) [![GitHub stars](https://img.shields.io/github/stars/wntrblm/nox?style=social&color=white)](https://github.com/wntrblm/nox/stargazers)
+### 16. [Nox](https://github.com/wntrblm/nox) [![GitHub_Stars](https://img.shields.io/github/stars/wntrblm/nox?style=social&color=white)](https://github.com/wntrblm/nox/stargazers)
 
 - **License:** Apache-2.0
 - **Implementation:** Python
@@ -316,7 +316,7 @@ The following open-source projects provide local interpreter installation, versi
 
 ---
 
-### 17. [Pyflow](https://github.com/David-OConnor/pyflow) [![GitHub stars](https://img.shields.io/github/stars/David-OConnor/pyflow?style=social&color=white)](https://github.com/David-OConnor/pyflow/stargazers)
+### 17. [Pyflow](https://github.com/David-OConnor/pyflow) [![GitHub_Stars](https://img.shields.io/github/stars/David-OConnor/pyflow?style=social&color=white)](https://github.com/David-OConnor/pyflow/stargazers)
 
 - **License:** MIT
 - **Implementation:** Rust
@@ -363,7 +363,7 @@ The following open-source projects provide local interpreter installation, versi
 Contributions are warmly encouraged! To propose updates or add new tools:
 
 1. **Fork the Repository:** Create your own branch (`git checkout -b feature/new-version-manager`).
-2. **Adhere to Formatting:** Maintain tabular structure, include specific pricing, star badges (`style=social&color=white`), and factual documentation.
+2. **Adhere to Formatting:** Maintain tabular structure, include specific pricing, Stars_Badges (`style=social&color=white`), and factual documentation.
 3. **Link Official Sources:** Provide direct links to GitHub repositories and official documentation sites.
 4. **Submit a Pull Request:** Open a descriptive PR against `main` for community review.
 
