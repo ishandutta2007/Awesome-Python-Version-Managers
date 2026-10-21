@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="glowPython" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8">
+        <animate attributeName="stop-color" values="#38bdf8;#818cf8;#38bdf8" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.9">
+        <animate attributeName="stop-color" values="#6366f1;#a855f7;#6366f1" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#eab308" stop-opacity="0.8">
+        <animate attributeName="stop-color" values="#eab308;#f59e0b;#eab308" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <radialGradient id="radialOrb1" cx="20%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0a0e1a" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="radialOrb2" cx="80%" cy="70%" r="40%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0a0e1a" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="radialOrb3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0a0e1a" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Filters for Glow Effect -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="badgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <style>
+    .font-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 800; }
+    .font-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 400; }
+    .font-code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-weight: 600; }
+
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.15); opacity: 1; }
+    }
+  </style>
+
+  <!-- Deep Canvas Base -->
+  <rect width="1200" height="400" rx="16" fill="url(#bgGrad)"/>
+  <rect width="1200" height="400" rx="16" fill="url(#radialOrb1)"/>
+  <rect width="1200" height="400" rx="16" fill="url(#radialOrb2)"/>
+  <rect width="1200" height="400" rx="16" fill="url(#radialOrb3)"/>
+
+  <!-- Subtle Matrix Grid -->
+  <g opacity="0.07" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="80" x2="1200" y2="80"/>
+    <line x1="0" y1="160" x2="1200" y2="160"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="320" x2="1200" y2="320"/>
+    <line x1="150" y1="0" x2="150" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="400"/>
+    <line x1="450" y1="0" x2="450" y2="400"/>
+    <line x1="600" y1="0" x2="600" y2="400"/>
+    <line x1="750" y1="0" x2="750" y2="400"/>
+    <line x1="900" y1="0" x2="900" y2="400"/>
+    <line x1="1050" y1="0" x2="1050" y2="400"/>
+  </g>
+
+  <!-- Animated Top & Bottom Ambient Beams -->
+  <path d="M 0,2 L 1200,2" stroke="url(#glowPython)" stroke-width="3" opacity="0.9"/>
+  <path d="M 0,398 L 1200,398" stroke="url(#glowPython)" stroke-width="2" opacity="0.5"/>
+
+  <!-- Dynamic Animated Floating Pills (Positioned in outer quadrants so they NEVER overlap title/subtitle) -->
+
+  <!-- Floating Pill 1: uv (Top Left) -->
+  <g filter="url(#badgeShadow)">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-8; 0,0" dur="5s" repeatCount="indefinite" />
+    <rect x="70" y="45" width="145" height="36" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" opacity="0.92"/>
+    <circle cx="90" cy="63" r="5" fill="#38bdf8"/>
+    <text x="104" y="68" fill="#f1f5f9" font-size="13" class="font-code">⚡ uv · 90k★</text>
+  </g>
+
+  <!-- Floating Pill 2: pyenv (Top Right) -->
+  <g filter="url(#badgeShadow)">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,9; 0,0" dur="6s" repeatCount="indefinite" />
+    <rect x="980" y="45" width="150" height="36" rx="18" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" opacity="0.92"/>
+    <circle cx="1000" cy="63" r="5" fill="#3b82f6"/>
+    <text x="1014" y="68" fill="#f1f5f9" font-size="13" class="font-code">🐍 pyenv · 45k★</text>
+  </g>
+
+  <!-- Floating Pill 3: mise (Bottom Left) -->
+  <g filter="url(#badgeShadow)">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,7; 0,0" dur="5.5s" repeatCount="indefinite" />
+    <rect x="80" y="325" width="155" height="36" rx="18" fill="#1e293b" stroke="#a855f7" stroke-width="1.5" opacity="0.92"/>
+    <circle cx="100" cy="343" r="5" fill="#a855f7"/>
+    <text x="114" y="348" fill="#f1f5f9" font-size="13" class="font-code">🌐 mise · polyglot</text>
+  </g>
+
+  <!-- Floating Pill 4: Conda & Poetry (Bottom Right) -->
+  <g filter="url(#badgeShadow)">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-7; 0,0" dur="6.5s" repeatCount="indefinite" />
+    <rect x="965" y="325" width="165" height="36" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="1.5" opacity="0.92"/>
+    <circle cx="985" cy="343" r="5" fill="#10b981"/>
+    <text x="999" y="348" fill="#f1f5f9" font-size="13" class="font-code">📦 poetry &amp; conda</text>
+  </g>
+
+  <!-- Floating Pill 5: .python-version (Top Center Subtle) -->
+  <g filter="url(#badgeShadow)">
+    <animateTransform attributeName="transform" type="translate" values="0,0; -4,0; 0,0" dur="7s" repeatCount="indefinite" />
+    <rect x="500" y="35" width="200" height="30" rx="15" fill="#0f172a" stroke="#64748b" stroke-dasharray="3,3" stroke-width="1.2" opacity="0.85"/>
+    <text x="600" y="55" fill="#94a3b8" font-size="12" text-anchor="middle" class="font-code">📌 .python-version pinned</text>
+  </g>
+
+  <!-- Pulsing Orbit Ring around center background (behind text) -->
+  <ellipse cx="600" cy="205" rx="360" ry="90" fill="none" stroke="url(#glowPython)" stroke-width="1.2" stroke-dasharray="8 6" opacity="0.3">
+    <animateTransform attributeName="transform" type="rotate" from="0 600 205" to="360 600 205" dur="40s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- ================= FOREGROUND HERO CONTENT (Always on top) ================= -->
+
+  <!-- Python Dual-Color Modern Icon Glyph (Above Title) -->
+  <g transform="translate(576, 92)" filter="url(#softGlow)">
+    <rect x="0" y="0" width="48" height="48" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <!-- Stylized Python Shield/Shape -->
+    <path d="M 24,10 C 17,10 16,13 16,15 L 16,19 L 24,19 L 24,20 L 13,20 C 11,20 9,22 9,25 C 9,29 11,31 14,31 L 16,31 L 16,28 C 16,25 18,23 21,23 L 29,23 C 31,23 33,21 33,19 L 33,15 C 33,12 30,10 24,10 Z" fill="#38bdf8"/>
+    <circle cx="19" cy="14" r="1.6" fill="#0f172a"/>
+    <path d="M 24,38 C 31,38 32,35 32,33 L 32,29 L 24,29 L 24,28 L 35,28 C 37,28 39,26 39,23 C 39,19 37,17 34,17 L 32,17 L 32,20 C 32,23 30,25 27,25 L 19,25 C 17,25 15,27 15,29 L 15,33 C 15,36 18,38 24,38 Z" fill="#fbbf24"/>
+    <circle cx="29" cy="34" r="1.6" fill="#0f172a"/>
+  </g>
+
+  <!-- Main Title -->
+  <text x="600" y="185" text-anchor="middle" fill="#ffffff" font-size="40" class="font-title" letter-spacing="-0.5">
+    Awesome Python Version Managers
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="222" text-anchor="middle" fill="#cbd5e1" font-size="17" class="font-sub">
+    Curated Index of Interpreters, Isolation Toolchains &amp; Reproducible Environments
+  </text>
+
+  <!-- Category Badges / Pills Bar in Foreground -->
+  <g transform="translate(305, 255)">
+    <!-- Pill A -->
+    <rect x="0" y="0" width="130" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="65" y="18" fill="#94a3b8" font-size="12" text-anchor="middle" class="font-sub">⚡ Fast Toolchains</text>
+
+    <!-- Pill B -->
+    <rect x="142" y="0" width="145" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="214" y="18" fill="#94a3b8" font-size="12" text-anchor="middle" class="font-sub">🔒 Environment Isolation</text>
+
+    <!-- Pill C -->
+    <rect x="299" y="0" width="135" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="366" y="18" fill="#94a3b8" font-size="12" text-anchor="middle" class="font-sub">📋 Modern Lockfiles</text>
+
+    <!-- Pill D -->
+    <rect x="446" y="0" width="144" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="518" y="18" fill="#94a3b8" font-size="12" text-anchor="middle" class="font-sub">🌐 Polyglot Runtimes</text>
+  </g>
+
+  <!-- Subtle Bottom Meta Tagline -->
+  <text x="600" y="325" text-anchor="middle" fill="#64748b" font-size="13" class="font-code">
+    uv · pyenv · mise · asdf · Conda · Poetry · Hatch · virtualenv · pixi · PDM
+  </text>
+
+  <!-- Border Frame -->
+  <rect x="1" y="1" width="1198" height="398" rx="15" fill="none" stroke="#334155" stroke-width="1.5" opacity="0.6"/>
+</svg>
